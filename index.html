@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -31,26 +33,221 @@
             </ul>
         </div>
         <div class="topbar-right">
-            <ul class="menu">
+            <ul class="menu d-flex">
                <li class="link-items"><a href="#">(000) 999 - 656 -888</a></li>
-               <li class="link-item"><a href="#">Login</a></li>
+               <li class="link-item"><a href="#">Login</a>
+                <div class="content">
+                    <header>login</header>
+                    <form action="#">
+                        <div class="field">
+                            <span class="fa fa-user"></span>
+                            <input type="text" required placeholder="Email or Phone">
+                        </div>
+                        <div class="field space">
+                           <span class="fa fa-lock"></span>
+                           <input type="password" class="password" required placeholder="Password">
+                           <span class="show">SHOW</span>
+                       </div>
+                       <div class="pass">
+                           <a href="#">Forget Password?</a>
+                       </div>
+                       <div class="field">
+                           <input type="submit" value="LOGIN">
+                       </div>
+                       <div class="login">Or login with</div>
+                       <div class="link">
+                           <div class="facebook">
+                               <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                           </div>
+                           <div class="instagram">
+                               <i class="fab fa-instagram"><span>Instagram</span></i>
+                           </div>
+                           <div class="twitter">
+                               <i class="fab fa-twitter"><span>Twitter</span></i>
+                           </div>
+                       </div>
+                       <div class="signup">Don't have account?
+                           <a href="#">Signup Now</a>
+                       </div>
+                    </form>
+                </div>
+            </li>
                <li class="link-item"><a href="#">Sign Up</a></li>
-               <li class="dropdown"><a href="#">USD</a><i class="fas fa-angle-down"></i>
-              
-                <ul class="d-none">
+               <li class="dropdown"><a href="#" id="valutaChange">USD</a><i class="fas fa-angle-down"></i>
+                <ul class="drip-menu d-none">
                     <li class="drop"><a href="#">EUR</a></li>
                     <li class="drop"><a href="#">AUD</a></li>
                 </ul>
-            
-               
             </li>
             </ul>
         </div>
     </div>
+        <div class="bottom-menu">
+                <nav>
+                    <div class="nav-logo">
+                        <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/mix_logo-2.svg" alt="">
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li class="li"><a  class="active" href="#">home</a></li>
+                            <li class="li"><a href="#">hotel<i class="fas fa-chevron-down"></i></a>
+                            <div class="mega-box">
+                                   <div class="row-cols-3">
+                                       <div class="drip">
+                                        <header>Listing</header>
+                                        <span>Search Popup Map</span>
+                                        <span>Search Half Map</span>
+                                        <span>Search Full Map</span>
+                                       </div>
+                                   </div>
+                                   <div class="row-cols-3">
+                                     <div class="drip">
+                                        <header>Single Detail</header>
+                                        <span>Booking At The Sidebar</span>
+                                        <span>Booking At The Bottom</span>
+                                        <span>Top Half-Map</span>
+                                        <span>Top Slider Image</span>
+                                        <span>Background on Top</span>
+                                     </div>
+                                   </div>
+                                   <div class="row-cols-3">
+                                   <div class="drip">
+                                    <header>House</header>
+                                    <span>Top Slider</span>
+                                    <span>Background Header</span>
+                                   </div>
+                                </div>
+                                <div class="row-cols-3">
+                                    <div class="drip">
+                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                            <li class="li"><a href="#">tour<i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-box">
+                                    <div class="row-cols-4">
+                                        <div class="drip">
+                                         <header>Listing</header>
+                                         <span>Top Search Layout</span>
+                                         <span>Sidebar Search Layout</span>
+                                          </div>
+                                    </div>
+                                    <div class="row-cols-4">
+                                      <div class="drip">
+                                         <header>Single Detail</header>
+                                         <span>External Booking</span>
+                                         <span>Daily Tour</span>
+                                         <span>Tour Package</span>
+                                         <span>Tour Starttime</span>
+                                         <span>Mapbox</span>
+                                         <span>Book & Inquiry Form</span>
+                                         <span>Inquiry Form</span>
+                                      </div>
+                                    </div>
+                                 <div class="row-cols-4">
+                                     <div class="drip">
+                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
+                                     </div>
+                                 </div>
+                             </div>
+                            </li>
+                            <li class="li"><a href="#">activity<i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-box">
+                                    <div class="row-cols-4">
+                                        <div class="drip">
+                                         <header>Listing</header>
+                                         <span>Top Search Layout</span>
+                                         <span>Sidebar Search Layout</span>
+                                          </div>
+                                    </div>
+                                    <div class="row-cols-4">
+                                      <div class="drip">
+                                         <header>Single Detail</header>
+                                         <span>Full Header</span>
+                                         <span>Image Slider</span>
+                                         <span>Boxed Layout</span>
+                                      </div>
+                                    </div>
+                                 <div class="row-cols-4">
+                                     <div class="drip">
+                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
+                                     </div>
+                                 </div>
+                             </div>
+                            </li>
+                            <li class="li"><a href="#">rental<i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-box">
+                                    <div class="row-cols-4">
+                                        <div class="drip">
+                                         <header>Listing</header>
+                                         <span>Rental Popup Search</span>
+                                         <span>Rental Half-Map Search</span>
+                                         <span>Rental Full-Map Search</span>
+                                          </div>
+                                    </div>
+                                    <div class="row-cols-4">
+                                      <div class="drip">
+                                         <header>Single Detail</header>
+                                         <span>Top Background</span>
+                                         <span>Top Slider</span>
+                                      </div>
+                                    </div>
+                                 <div class="row-cols-4">
+                                     <div class="drip">
+                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
+                                     </div>
+                                 </div>
+                             </div>
+                            </li>
+                            <li class="li"><a href="#">car<i class="fas fa-chevron-down"></i></a>
+                            <ul class="drop-menu">
+                                <li class="drop-li"><a href="#">Car Top Search</a></li>
+                                <li class="drop-li"><a href="#">Car Sidebar Search</a></li>
+                                <li class="drop-li"><a href="#">Single Style</a></li>
+                            </ul>
+                            </li>
+                            <li class="li"><a href="#">pages<i class="fas fa-chevron-down"></i></a>
+                                <ul class="drop-menu">
+                                    <li class="drop-li"><a href="#">Author Profile</a></li>
+                                    <li class="drop-li"><a href="#">Become Local Expert</a></li>
+                                    <li class="drop-li"><a href="#">Destination</a></li>
+                                    <li class="drop-li"><a href="#">About Us</a></li>
+                                    <li class="drop-li"><a href="#">FAQs</a></li>
+                                    <li class="drop-li"><a href="#">404 Page</a></li>
+                                    <li class="drop-li"><a href="#">Contact</a></li>
+                                    <li class="drop-li"><a href="#">Blog</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-icon">
+                        <ul>
+                            <li>
+                                <i class="fas fa-shopping-basket"></i>
+                            </li>
+                            <li>
+                                <a href="#">Become Local Expert</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-search"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        <div class="text-left">
+          <div class="container">
+              <h1>Hi There!</h1>
+              <p>Where would you like to go?</p>
+          </div>
+        </div>
+  
    </header>
     <!--header end-->
 
-
+ 
 
 
    
