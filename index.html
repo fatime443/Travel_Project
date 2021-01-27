@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/slick.css">
+    <link rel="stylesheet" href="vendors/css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--header start-->
-   <header>
+<header>
     <div class="topbar">
         <div class="topbar-left">
             <ul class="social">
@@ -34,224 +36,1134 @@
         </div>
         <div class="topbar-right">
             <ul class="menu d-flex">
-               <li class="link-items"><a href="#">(000) 999 - 656 -888</a></li>
-               <li class="link-item"><a href="#">Login</a>
-                <div class="content">
-                    <header>login</header>
-                    <form action="#">
-                        <div class="field">
-                            <span class="fa fa-user"></span>
-                            <input type="text" required placeholder="Email or Phone">
-                        </div>
-                        <div class="field space">
-                           <span class="fa fa-lock"></span>
-                           <input type="password" class="password" required placeholder="Password">
-                           <span class="show">SHOW</span>
-                       </div>
-                       <div class="pass">
-                           <a href="#">Forget Password?</a>
-                       </div>
-                       <div class="field">
-                           <input type="submit" value="LOGIN">
-                       </div>
-                       <div class="login">Or login with</div>
-                       <div class="link">
-                           <div class="facebook">
-                               <i class="fab fa-facebook-f"><span>Facebook</span></i>
-                           </div>
-                           <div class="instagram">
-                               <i class="fab fa-instagram"><span>Instagram</span></i>
-                           </div>
-                           <div class="twitter">
-                               <i class="fab fa-twitter"><span>Twitter</span></i>
-                           </div>
-                       </div>
-                       <div class="signup">Don't have account?
-                           <a href="#">Signup Now</a>
-                       </div>
-                    </form>
-                </div>
-            </li>
-               <li class="link-item"><a href="#">Sign Up</a></li>
-               <li class="dropdown"><a href="#" id="valutaChange">USD</a><i class="fas fa-angle-down"></i>
-                <ul class="drip-menu d-none">
-                    <li class="drop"><a href="#">EUR</a></li>
-                    <li class="drop"><a href="#">AUD</a></li>
-                </ul>
-            </li>
+                <li class="link-items"><a href="#">(000) 999 - 656 -888</a></li>
+                <li class="link-item"><a href="#">Login</a>
+                    <div class="content">
+                        <header>login</header>
+                        <form action="#">
+                            <div class="field">
+                                <span class="fa fa-user"></span>
+                                <input type="text" required placeholder="Email or Phone">
+                            </div>
+                            <div class="field space">
+                                <span class="fa fa-lock"></span>
+                                <input type="password" class="password" required placeholder="Password">
+                                <span class="show">SHOW</span>
+                            </div>
+                            <div class="pass">
+                                <a href="#">Forget Password?</a>
+                            </div>
+                            <div class="field">
+                                <input type="submit" value="LOGIN">
+                            </div>
+                            <div class="login">Or login with</div>
+                            <div class="link">
+                                <div class="facebook">
+                                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                                </div>
+                                <div class="instagram">
+                                    <i class="fab fa-instagram"><span>Instagram</span></i>
+                                </div>
+                                <div class="twitter">
+                                    <i class="fab fa-twitter"><span>Twitter</span></i>
+                                </div>
+                            </div>
+                            <div class="signup">Don't have account?
+                                <a href="#">Signup Now</a>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="link-item"><a href="#">Sign Up</a></li>
+                <li class="dropdown"><a href="#" id="valutaChange">USD</a><i class="fas fa-angle-down"></i>
+                    <ul class="drip-menu d-none">
+                        <li class="drop"><a href="#">EUR</a></li>
+                        <li class="drop"><a href="#">AUD</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
-        <div class="bottom-menu">
-                <nav>
-                    <div class="nav-logo">
-                        <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/mix_logo-2.svg" alt="">
-                    </div>
-                    <div class="nav-menu">
-                        <ul>
-                            <li class="li"><a  class="active" href="#">home</a></li>
-                            <li class="li"><a href="#">hotel<i class="fas fa-chevron-down"></i></a>
-                            <div class="mega-box">
-                                   <div class="row-cols-3">
-                                       <div class="drip">
-                                        <header>Listing</header>
-                                        <span>Search Popup Map</span>
-                                        <span>Search Half Map</span>
-                                        <span>Search Full Map</span>
-                                       </div>
-                                   </div>
-                                   <div class="row-cols-3">
-                                     <div class="drip">
-                                        <header>Single Detail</header>
-                                        <span>Booking At The Sidebar</span>
-                                        <span>Booking At The Bottom</span>
-                                        <span>Top Half-Map</span>
-                                        <span>Top Slider Image</span>
-                                        <span>Background on Top</span>
-                                     </div>
-                                   </div>
-                                   <div class="row-cols-3">
-                                   <div class="drip">
+    <div class="bottom-menu">
+        <nav>
+            <div class="nav-logo">
+                <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/mix_logo-2.svg" alt="">
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="li"><a class="active" href="#">home</a></li>
+                    <li class="li"><a href="#">hotel<i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-box">
+                            <div class="row-cols-3">
+                                <div class="drip">
+                                    <header>Listing</header>
+                                    <span>Search Popup Map</span>
+                                    <span>Search Half Map</span>
+                                    <span>Search Full Map</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-3">
+                                <div class="drip">
+                                    <header>Single Detail</header>
+                                    <span>Booking At The Sidebar</span>
+                                    <span>Booking At The Bottom</span>
+                                    <span>Top Half-Map</span>
+                                    <span>Top Slider Image</span>
+                                    <span>Background on Top</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-3">
+                                <div class="drip">
                                     <header>House</header>
                                     <span>Top Slider</span>
                                     <span>Background Header</span>
-                                   </div>
-                                </div>
-                                <div class="row-cols-3">
-                                    <div class="drip">
-                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
-                                    </div>
                                 </div>
                             </div>
-                            </li>
-                            <li class="li"><a href="#">tour<i class="fas fa-chevron-down"></i></a>
-                                <div class="mega-box">
-                                    <div class="row-cols-4">
-                                        <div class="drip">
-                                         <header>Listing</header>
-                                         <span>Top Search Layout</span>
-                                         <span>Sidebar Search Layout</span>
-                                          </div>
-                                    </div>
-                                    <div class="row-cols-4">
-                                      <div class="drip">
-                                         <header>Single Detail</header>
-                                         <span>External Booking</span>
-                                         <span>Daily Tour</span>
-                                         <span>Tour Package</span>
-                                         <span>Tour Starttime</span>
-                                         <span>Mapbox</span>
-                                         <span>Book & Inquiry Form</span>
-                                         <span>Inquiry Form</span>
-                                      </div>
-                                    </div>
-                                 <div class="row-cols-4">
-                                     <div class="drip">
-                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
-                                     </div>
-                                 </div>
-                             </div>
-                            </li>
-                            <li class="li"><a href="#">activity<i class="fas fa-chevron-down"></i></a>
-                                <div class="mega-box">
-                                    <div class="row-cols-4">
-                                        <div class="drip">
-                                         <header>Listing</header>
-                                         <span>Top Search Layout</span>
-                                         <span>Sidebar Search Layout</span>
-                                          </div>
-                                    </div>
-                                    <div class="row-cols-4">
-                                      <div class="drip">
-                                         <header>Single Detail</header>
-                                         <span>Full Header</span>
-                                         <span>Image Slider</span>
-                                         <span>Boxed Layout</span>
-                                      </div>
-                                    </div>
-                                 <div class="row-cols-4">
-                                     <div class="drip">
-                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
-                                     </div>
-                                 </div>
-                             </div>
-                            </li>
-                            <li class="li"><a href="#">rental<i class="fas fa-chevron-down"></i></a>
-                                <div class="mega-box">
-                                    <div class="row-cols-4">
-                                        <div class="drip">
-                                         <header>Listing</header>
-                                         <span>Rental Popup Search</span>
-                                         <span>Rental Half-Map Search</span>
-                                         <span>Rental Full-Map Search</span>
-                                          </div>
-                                    </div>
-                                    <div class="row-cols-4">
-                                      <div class="drip">
-                                         <header>Single Detail</header>
-                                         <span>Top Background</span>
-                                         <span>Top Slider</span>
-                                      </div>
-                                    </div>
-                                 <div class="row-cols-4">
-                                     <div class="drip">
-                                     <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png" alt="">
-                                     </div>
-                                 </div>
-                             </div>
-                            </li>
-                            <li class="li"><a href="#">car<i class="fas fa-chevron-down"></i></a>
-                            <ul class="drop-menu">
-                                <li class="drop-li"><a href="#">Car Top Search</a></li>
-                                <li class="drop-li"><a href="#">Car Sidebar Search</a></li>
-                                <li class="drop-li"><a href="#">Single Style</a></li>
-                            </ul>
-                            </li>
-                            <li class="li"><a href="#">pages<i class="fas fa-chevron-down"></i></a>
-                                <ul class="drop-menu">
-                                    <li class="drop-li"><a href="#">Author Profile</a></li>
-                                    <li class="drop-li"><a href="#">Become Local Expert</a></li>
-                                    <li class="drop-li"><a href="#">Destination</a></li>
-                                    <li class="drop-li"><a href="#">About Us</a></li>
-                                    <li class="drop-li"><a href="#">FAQs</a></li>
-                                    <li class="drop-li"><a href="#">404 Page</a></li>
-                                    <li class="drop-li"><a href="#">Contact</a></li>
-                                    <li class="drop-li"><a href="#">Blog</a></li>
-
-                                </ul>
-                            </li>
+                            <div class="row-cols-3">
+                                <div class="drip">
+                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li"><a href="#">tour<i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-box">
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Listing</header>
+                                    <span>Top Search Layout</span>
+                                    <span>Sidebar Search Layout</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Single Detail</header>
+                                    <span>External Booking</span>
+                                    <span>Daily Tour</span>
+                                    <span>Tour Package</span>
+                                    <span>Tour Starttime</span>
+                                    <span>Mapbox</span>
+                                    <span>Book & Inquiry Form</span>
+                                    <span>Inquiry Form</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li"><a href="#">activity<i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-box">
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Listing</header>
+                                    <span>Top Search Layout</span>
+                                    <span>Sidebar Search Layout</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Single Detail</header>
+                                    <span>Full Header</span>
+                                    <span>Image Slider</span>
+                                    <span>Boxed Layout</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li"><a href="#">rental<i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-box">
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Listing</header>
+                                    <span>Rental Popup Search</span>
+                                    <span>Rental Half-Map Search</span>
+                                    <span>Rental Full-Map Search</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <header>Single Detail</header>
+                                    <span>Top Background</span>
+                                    <span>Top Slider</span>
+                                </div>
+                            </div>
+                            <div class="row-cols-4">
+                                <div class="drip">
+                                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li"><a href="#">car<i class="fas fa-chevron-down"></i></a>
+                        <ul class="drop-menu">
+                            <li class="drop-li"><a href="#">Car Top Search</a></li>
+                            <li class="drop-li"><a href="#">Car Sidebar Search</a></li>
+                            <li class="drop-li"><a href="#">Single Style</a></li>
                         </ul>
-                    </div>
-                    <div class="nav-icon">
-                        <ul>
-                            <li>
-                                <i class="fas fa-shopping-basket"></i>
-                            </li>
-                            <li>
-                                <a href="#">Become Local Expert</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-search"></i>
-                            </li>
+                    </li>
+                    <li class="li"><a href="#">pages<i class="fas fa-chevron-down"></i></a>
+                        <ul class="drop-menu">
+                            <li class="drop-li"><a href="#">Author Profile</a></li>
+                            <li class="drop-li"><a href="#">Become Local Expert</a></li>
+                            <li class="drop-li"><a href="#">Destination</a></li>
+                            <li class="drop-li"><a href="#">About Us</a></li>
+                            <li class="drop-li"><a href="#">FAQs</a></li>
+                            <li class="drop-li"><a href="#">404 Page</a></li>
+                            <li class="drop-li"><a href="#">Contact</a></li>
+                            <li class="drop-li"><a href="#">Blog</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </li>
+                </ul>
             </div>
-        <div class="text-left">
-          <div class="container">
-              <h1>Hi There!</h1>
-              <p>Where would you like to go?</p>
-          </div>
+            <div class="nav-icon">
+                <ul>
+                    <li class="shop-btn">
+                        <i class="fas fa-shopping-basket"></i>
+                        <ul class="shop d-none">
+                            <li class="shop-li">Your Cart</li>
+                            <li class="active-li">Your cart is empty</li>
+                        </ul>
+                    </li>
+                    <li class="become">
+                        <a href="#">Become Local Expert</a>
+                    </li>
+                    <li class="become">
+                        <i class="fas fa-search"></i>
+                    </li>
+                    <li>
+                        <i id="open" class="fas fa-bars"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="side-menu" id="side-menu">
+        <div class="close-button">
+            <i id="close" class="fas fa-chevron-left"></i>
         </div>
-  
+        <div class="container">
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link">
+                        <span id="active">Home</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span> Hotel</span> <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <header>Listing</header>
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>Single Detail</header>
+                            <li><a href="#">Booking At The Sidebar</a></li>
+                            <li><a href="#">Booking At The Bottom</a></li>
+                            <li><a href="#">Top Half-Map</a></li>
+                            <li><a href="#">Top Slider Image</a></li>
+                            <li><a href="#">Background on Top</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>House</header>
+                            <li><a href="#">Top Slider</a></li>
+                            <li><a href="#">Background Header</a></li>
+                        </ul>
+                        <div class="submenu">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span> Tour </span><i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <header>Listing</header>
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>Single Detail</header>
+                            <li><a href="#">Booking At The Sidebar</a></li>
+                            <li><a href="#">Booking At The Bottom</a></li>
+                            <li><a href="#">Top Half-Map</a></li>
+                            <li><a href="#">Top Slider Image</a></li>
+                            <li><a href="#">Background on Top</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>House</header>
+                            <li><a href="#">Top Slider</a></li>
+                            <li><a href="#">Background Header</a></li>
+                        </ul>
+                        <div class="submenu">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span> Activity</span> <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <header>Listing</header>
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>Single Detail</header>
+                            <li><a href="#">Booking At The Sidebar</a></li>
+                            <li><a href="#">Booking At The Bottom</a></li>
+                            <li><a href="#">Top Half-Map</a></li>
+                            <li><a href="#">Top Slider Image</a></li>
+                            <li><a href="#">Background on Top</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>House</header>
+                            <li><a href="#">Top Slider</a></li>
+                            <li><a href="#">Background Header</a></li>
+                        </ul>
+                        <div class="submenu">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span>Rental</span> <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <header>Listing</header>
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>Single Detail</header>
+                            <li><a href="#">Booking At The Sidebar</a></li>
+                            <li><a href="#">Booking At The Bottom</a></li>
+                            <li><a href="#">Top Half-Map</a></li>
+                            <li><a href="#">Top Slider Image</a></li>
+                            <li><a href="#">Background on Top</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <header>House</header>
+                            <li><a href="#">Top Slider</a></li>
+                            <li><a href="#">Background Header</a></li>
+                        </ul>
+                        <div class="submenu">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/banner_megamenu-165x256.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="link">
+                        <span>Car</span> <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="link">
+                        <span> Pages</span> <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="sub">
+                        <ul class="submenu">
+                            <li><a href="#">Search Popup Map</a></li>
+                            <li><a href="#">Search Half Map</a></li>
+                            <li><a href="#">Search Full Map</a></li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="text-left">
+        <div class="container">
+            <h1>Hi There!</h1>
+            <p>Where would you like to go?</p>
+        </div>
+    </div>
+    <!--tab menu start-->
+    <div class="container">
+        <div id="tabMenu">
+            <button class="btn">Tour</button>
+            <button class="btn">Hotel</button>
+            <button class="btn">Activity</button>
+            <button class="btn">Rental</button>
+            <button class="btn">Car Rental</button>
+            <button class="btn">Car Transfer</button>
+            <div class="tab-content">
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="destination d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>Destination</span>
+                                        </li>
+                                        <li><span class="active-text">Where are your going?</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="destination d-flex">
+                                <i class="far fa-calendar"></i>
+                                <div class="destination-text">
+                                    <ul>
+                                        <li> <span>From - To</span>
+                                        </li>
+                                        <li><span class="active-text">23/01/2021 - 24/01/2021</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-button d-flex">
+                                <div class="advance">
+                                    <ul>
+                                        <li><span>Advance</span></li>
+                                        <li> <span>More</span><i class="fas fa-caret-down"></i></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn-search">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+   <!--tab menu end-->
    </header>
     <!--header end-->
-
- 
+ <!--travel star-->
+ <section class="travel-section">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="special">
+                        <div class="special-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_1.jpg" alt="">
+                        </div>
+                        <div class="special-item">
+                            <span>HOLIDAY SALE</span>
+                        </div>
+                        <div class="special-text">
+                            
+                            <h2>Special Offers</h2>
+                            <p>Find Your Perfect Hotels Get the best prices on 20,000+ properties the best prices on</p>
+                            <a href="#">See Deals</a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-lg-3">
+                    <div class="new">
+                        <div class="new-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_2.jpg" alt="">
+                        </div>
+                        <div class="new-text">
+                            <h2>Newsletters</h2>
+                            <p>Join for free and get our tailored newsletters full of hot travel deals.</p>
+                            <a href="#">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="travel">
+                        <div class="travel-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_3.jpg" alt="">
+                        </div>
+                        <div class="travel-icon">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2019/02/ico_tips.svg" alt="">
+                            </div>
+                        <div class="travel-text">
+                           
+                            <h2>Travel Tips</h2>
+                            <p>Tips from our travel experts to make your next trip even better.</p>
+                            <a href="#">Get Inspired</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!--travel end-->
+ <!--top start-->
+<section class="top-section">
+ <div class="container">
+     <div class="top-text">
+         <h2>Top Destinations</h2>
+     </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2015/02/cheapest-car-insurance-in-new-jersey-nj-story-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4 class="nev">NEW JERSEY</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2015/02/san_francisco-1024x1024-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4 class="san">SAN FRANCISCO</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2015/02/virgi_3-1024x1024-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4>VIRGINIA</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/11/cali_5-1024x1024-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4 class="nev">CALIFORNIA</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/12/los_angeles_3-1024x1024-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4 class="san">LOS ANGELES</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="top">
+                <div class="top-img">
+                    <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/12/nevaga_2-1024x1024-270x200.jpg" alt="">
+                    <div class="top-text">
+                        <h4>NEVADA</h4>
+                    </div>
+                    <div class="top-item">
+                        <a href="#">20 Hotels</a>
+                        <a href="#">24 Tours</a>
+                        <a href="#">23 Activities</a>
+                        <a href="#">15 Cars</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+ <!--top end-->
+<!--slider start-->
+<section class="trend-section">
+    <div class="container">
+        <div class="trend d-flex">
+            <h2>Trending:</h2>
+            <div class="tour">
+                <span>Tour</span><i class="fas fa-chevron-down"></i>
+                <ul class="tour-drop d-none">
+                    <li>
+                        <span>Activity</span>
+                        </li>
+                        <li>
+                        <span>Hotel</span>
+                    </li>
+                        <li><span>Rental</span></li>
+                        <li><span>Car</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider">
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/slide-faqs-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">American Parks Trail end Rapid City</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/TheCommonWanderer_-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">Los Angeles to San Francisco Express</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/Beautiful-US-Cities-to-Travel-to-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+    
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>New York, United States</span>
+                           <h4> <a href="#">Two Hour Walking Tour of Manhattan</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/tour_img-755002-145-2-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+    
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>New York, United States</span>
+                           <h4> <a href="#">Rockies, Yellowstone & Mt Rushmore</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/los_angeles_3-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">American Parks Trail end Rapid City</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/alexei-scutari-481455-unsplash-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">American Parks Trail end Rapid City</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/los_angeles_2-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">American Parks Trail end Rapid City</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="featured-box">
+                        <div class="featured-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/2258amer2016a-680x500.jpg" alt="">
+                        </div>
+                        <div class="featured-image">
+                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/bfi_thumb/pp_1-200x200-3a2xg7hpa7c65hwhftiww0.png" alt="">
+                        </div>
+                        <div class="featured">
+                            <span>Featured</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="featured-icon">
+                            <i class="fas fa-map-marker-alt"></i> <span>Nevada, American</span>
+                           <h4> <a href="#">American Parks Trail end Rapid City</a></h4>
+                            <ul class="star d-flex align-items-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="far fa-star"></i></li>
+                                <span>7 Reviews</span>
+                            </ul>
+                        </div>
+                        <div class="featured-item d-flex justify-content-between align-items-center">
+                            <i class="far fa-clock">8 hours</i>
+                           <ul>
+                               <li class="small"> <del><span>$100,00</span></del>
+                               </li>
+                               <li class="large"> <span> $89,00</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+</section>
+<!--slider end--> 
+<!--footer start-->
+<footer>
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="letter d-flex">
+                        <div class="letter-img">
+                            <img src="https://mixmap.travelerwp.com/wp-content/themes/traveler/v2/images/svg/ico_email_subscribe.svg" alt="">
+                        </div>
+                        <div class="letter-text">
+                            <h4>Get Updates & More</h4>
+                            <p>Thoughtful thoughts to your inbox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="email d-flex">
+                        <input type="email" name="EMAIL" class="form-control" placeholder="Your Email">
+                        <input type="submit" name="submit" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  
+</footer>
+<!--footer end-->
 
 
    
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

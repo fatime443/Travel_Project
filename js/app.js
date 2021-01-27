@@ -29,3 +29,42 @@ linkItem.addEventListener('click', () =>{
         content.style.display = 'block'
     }
 })
+$('.shop-btn').click(function(){
+    $('.shop').toggleClass('d-none')
+})
+$('#tabMenu button').click(function(){
+    const index = $(this).index();
+    $('.tab-content .tabs').stop().slideUp();
+    $('.tab-content .tabs').eq(index).stop().slideDown();
+})
+var btn = document.getElementsByClassName('btn');
+for(var i=0; i<btn.length; i++){
+    btn[i].onclick=function(){
+    for(var j=0; j<btn.length; j++){
+        btn[j].style.backgroundColor = '#1A2B48'
+    }
+   
+        this.style.backgroundColor = '#5191FA';
+    }
+}
+$('.link i').click(function(e){
+    e.preventDefault();
+  
+    $('.sub').addClass().slideToggle('active-class')
+})
+
+$('#open').click(function(e){
+    e.preventDefault();
+    $('.side-menu').addClass('active-acc')
+})
+$('#close').click(function(e){
+    e.preventDefault();
+    $('.side-menu').removeClass('active-acc')
+})
+$('.tour').click(function(){
+    $('.tour-drop').toggleClass('d-none')
+})
+$('.slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+});
