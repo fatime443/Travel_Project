@@ -32,7 +32,11 @@ linkItem.addEventListener('click', () =>{
 $('.shop-btn').click(function(){
     $('.shop').toggleClass('d-none')
 })
-
+$('#tabMenu button').click(function(){
+    const index = $(this).index();
+    $('.tab-content .tabs').stop().slideUp();
+    $('.tab-content .tabs').eq(index).stop().slideDown();
+})
 var btn = document.getElementsByClassName('btn');
 for(var i=0; i<btn.length; i++){
     btn[i].onclick=function(){
@@ -57,51 +61,32 @@ $('#close').click(function(e){
     e.preventDefault();
     $('.side-menu').removeClass('active-acc')
 })
-$('.tour').click(function(){
-    $('.tour-drop').toggleClass('d-none')
-})
-$('.slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 1024,//992
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false,
-                arrows: false
-            }
-        },
-        {
-            breakpoint: 768,//768
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: false
-            }
-        },
-        {
-            breakpoint: 540,//540
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: false
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
 $('.box').click(function(){
     $('.curren').toggleClass('d-none')
 })
+$('button').click(function(){
+    $('.checkbox').toggleClass('d-none')
+})
+var slider = document.getElementById('myRange');
+var output = document.getElementById('value');
+output.innerHTML = slider.value;
+slider.oninput = function(){
+    output.innerHTML = this.value;
+}
+$('.accordion h6').click(function(){
+    $('.sliderContainer').slideToggle()
+})
+$('.check-acc').click(function(){
+    $('.check form').slideToggle()
+})
+$('.star-acc').click(function(){
+    $('.star form').slideToggle()
+})
+$('.faculty-acc').click(function(){
+    $('.faculty form').slideToggle()
+})
+$('.theme-acc').click(function(){
+    $('.theme form').slideToggle()
+})
+
+    
